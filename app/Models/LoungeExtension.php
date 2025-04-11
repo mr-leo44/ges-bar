@@ -31,4 +31,9 @@ class LoungeExtension extends Model
     {
         return $this->hasMany(Manager::class);
     }
+
+    public function waiters(): HasMany
+    {
+        return $this->hasMany(Manager::class);
+    }
 }
